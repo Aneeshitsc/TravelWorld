@@ -43,40 +43,18 @@ const HiddenPlaces = () => {
     // </div>
     <div class="mx-auto max-w-2xl px-4 pb-16 sm:px-6 lg:max-w-7xl lg:px-8 mt-10">
       <p class="uppercase text-5xl">
-        get a brief about Hidden beauties in srilanka
+        get a brief about Hidden beauties in World
       </p>
       {/* <!-- first --> */}
       <div class="grid grid-cols-1 md:grid-cols-2 mt-10 gap-5">
         <img
-          src="https://firebasestorage.googleapis.com/v0/b/travely-7264c.appspot.com/o/dsc_0128.webp?alt=media&token=a06ac6b6-450a-49ac-9330-e345e9e0e755"
+          src="https://cdn.audleytravel.com/1080/770/79/15996690-secluded-beach-in-palawan.webp"
           alt=""
         ></img>
         <div class="text-xl">
-          <p className="font-extrabold text-2xl mb-3">Sembuwaththa Lake</p>
+          <p className="font-extrabold text-2xl mb-3">Palawan,Philippines</p>
           <p>
-            Sembuwatta Lake is a stunning man-made lake located in the hill
-            country of Sri Lanka, near the town of Elkaduwa in the Matale
-            District. The lake is situated around 1,150 meters above sea level
-            and is surrounded by lush green hills covered with tea plantations,
-            eucalyptus trees, and dense forest. The Sembuwatta Lake was created
-            by building a dam across the Sembuwatta River, which flows through a
-            {/* deep gorge. The lake covers an area of approximately 9.2 hectares
-            and has a maximum depth of around 18 meters. The water in the lake
-            is crystal clear and has a bluish-green tint, which makes it a
-            popular destination for swimming and boating. In addition to its
-            natural beauty, Sembuwatta Lake is also a popular picnic spot and
-            tourist attraction in Sri Lanka. Visitors can enjoy a variety of
-            activities at the lake, including boating, fishing, swimming, and
-            hiking in the surrounding hills. There are also several small
-            waterfalls and streams that flow into the lake, creating a
-            picturesque landscape. One of the main attractions at Sembuwatta
-            Lake is the wooden bridge that spans the lake, offering stunning
-            views of the surrounding hills and tea plantations. The bridge is
-            also a popular spot for taking photographs, especially during
-            sunrise and sunset. Overall, Sembuwatta Lake is a beautiful and
-            peaceful destination in Sri Lanka that offers a perfect getaway from
-            the hustle and bustle of city life. It is a must-visit location for
-            nature lovers and those seeking a serene and tranquil atmosphere. */}
+            Palawan, often called the "last frontier" of the Philippines, is a stunning archipelago located in the western part of the country. Known for its pristine natural beauty, Palawan boasts crystal-clear turquoise waters, lush rainforests, dramatic limestone cliffs, and some of the most biodiverse marine ecosystems in the world. Highlights include the Puerto Princesa Underground River, a UNESCO World Heritage Site and one of the New 7 Wonders of Nature, and El Nido and Coron, which are famous for their breathtaking lagoons, hidden beaches, and vibrant coral reefs.
           </p>
         </div>
       </div>
@@ -84,19 +62,14 @@ const HiddenPlaces = () => {
       <div class="grid grid-cols-1 md:grid-cols-2 mt-20 gap-5">
         <div class="md:order-last">
           <img
-            src="https://firebasestorage.googleapis.com/v0/b/travely-7264c.appspot.com/o/IMG_9666.JPG?alt=media&token=8be80c0f-0646-4f38-b468-43eb95c3b54b"
+            src="https://www.travelandleisure.com/thmb/6UwUc0qiA8ANOErYMuHJ1D5Dv4o=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc()/ha-long-bay-vietnam-MOSTBEAUTIFUL0921-910a3a82a03f4bb59d49290fbdc2a6db.jpg"
             alt=""
           ></img>
         </div>
         <div class="text-xl">
-          <p className="font-extrabold text-2xl mb-3">Hulangala</p>
+          <p className="font-extrabold text-2xl mb-3">Ha Long Bay</p>
           <p>
-            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sunt
-            fugiat cupiditate quas vitae, ducimus saepe quos voluptatibus,
-            accusantium qui voluptates earum voluptatum. Consequuntur alias
-            beatae laborum neque quisquam, quae sit, inventore maxime sed
-            eligendi aliquid a cum voluptatum nostrum deleniti cumque minima ab
-            ullam impedit eveniet nulla sequi quis odit?
+          Ha Long Bay, located in northeastern Vietnam, is a UNESCO World Heritage Site renowned for its stunning natural beauty and geological significance. The bay features nearly 2,000 limestone islands and islets that rise dramatically from the emerald waters of the Gulf of Tonkin. Many of these formations are topped with lush vegetation, and some house magnificent caves and grottoes, shaped over millions of years by wind and water erosion. The name "Ha Long" translates to "Descending Dragon," and local legends speak of dragons sent by the gods to protect the land from invaders, creating the islands as they descended into the sea.
           </p>
         </div>
       </div>

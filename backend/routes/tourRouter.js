@@ -5,12 +5,19 @@ const tourReservation = require("../controllers/tourReservstionController");
 
 //define route handler
 const router = express.Router();
-
+const multer = require("multer");
+// Multer setup (memory storage, good for uploading to Cloudinary)
+const storage = multer.memoryStorage();
+const upload = multer({ storage });
 //tour routes
 router
   .route("/")
-  .post(tourController.createTour)
+  .post(upload.single("img"),tourController.createTour)
   .get(tourController.getAllTours);
+
+  router
+  .route("/getTour/:name")
+  .get(tourController.getToursByName)
 
 router
   .route("/:id")

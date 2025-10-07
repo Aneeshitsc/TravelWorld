@@ -2,10 +2,6 @@ const mongoose = require("mongoose");
 const Schema = mongoose.Schema;
 
 const addTourForm = new Schema({
-  currentUser: {
-    type: String,
-    required: [true, "Must be login first"],
-  },
   img: {
     type: String,
     required: [true, "must provide a photo"],

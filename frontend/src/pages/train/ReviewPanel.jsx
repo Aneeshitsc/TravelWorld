@@ -8,7 +8,7 @@ const ReviewPanel = () => {
 
     useEffect(() => {
         const getAllSeatBooking = () => {
-            axios.get("/seatBookings/").then((res) => {
+            axios.get("http:localhost:4000/api/seatBookings/").then((res) => {
                 console.log(res.data)
                 setSeatBooking(res.data)
             }).catch((err) => {

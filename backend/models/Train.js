@@ -11,7 +11,7 @@ const trainSchema =  new Schema({
     price : {type : String}, 
     noOfSeats : {type : Number},
     description : {type: String,},    
-    trainMainImg :{type:String},
+    // trainMainImg :{type:String},
     MaxBagage : {type:String},
     classType: { type : String},
     cancelCharges : {type:String}

@@ -18,7 +18,7 @@ const MyOneTicket = ()=>{
 
     useEffect(() => {
 
-        axios.get(`/seatBookings/get/${id}`)
+        axios.get(`http:localhost:4000/api/seatBookings/get/${id}`)
             .then((res) => {
                 console.log(res.data)
                 setSinglePassenger(res.data)

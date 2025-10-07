@@ -41,17 +41,17 @@ const Aboutus = () => {
                   Why Choose Us
                 </span>
                 <h2 className="text-dark mb-8 text-3xl font-bold sm:text-4xl">
-                  Lorem ipsum dolor sit amet
+                Experience Travel, the Way It Should Be
                 </h2>
                 <p className="text-body-color mb-8 text-base">
-                  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Esse
-                  nulla enim aperiam culpa cupiditate quas animi ducimus
-                  blanditiis! Dolorum, perspiciatis.
+                We believe travel should be personal, seamless, and inspiring.
+                That’s why we take the time to understand what you're looking for — whether it's adventure, relaxation, cultural exploration, or a mix of everything. Our experienced team handles all the details, from handpicked accommodations to customized itineraries, so you can focus on enjoying the journey without the stress of planning. 
+                With us, every trip is thoughtfully crafted to match your style and pace.
                 </p>
                 <p className="text-body-color mb-12 text-base">
-                  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Esse
-                  nulla enim aperiam culpa cupiditate quas animi ducimus
-                  blanditiis! Dolorum, perspiciatis.
+                What sets us apart is our commitment to quality, care, and creating meaningful travel experiences. 
+                We go beyond the typical tourist paths to show you the heart of each destination — connecting you with local culture, hidden gems, and unforgettable moments. With friendly support from start to finish, 
+                we make sure your travel experience is smooth, memorable, and truly one of a kind.
                 </p>
               </div>
             </div>

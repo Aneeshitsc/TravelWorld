@@ -11,7 +11,7 @@ const DoUpdateTrain = () => {
 
     useEffect(() => {
         const getOneTrain = () => {
-            axios.get(`/train/get/${id}`).then((res) => {
+            axios.get(`http:localhost:4000/api/train/get/${id}`).then((res) => {
                 setSingleTrain(res.data)
                 console.log(singleTrain)
             }).catch((err) => {

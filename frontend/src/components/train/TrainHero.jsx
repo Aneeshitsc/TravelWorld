@@ -11,9 +11,10 @@ const TrainHero = ()=>{
                 Easily Book your<br/>Train Tickets online<br/>with 
             </h2>
             <h1 className='text-3xl md:text-5xl font-extrabold uppercase text-[#DEEFFF] py-4'>
-                Travely
+                Travel world
             </h1>
-            <p className='text-sm md:text-1xl  lg:max-w-[580px] md:max-w-[900px] text-justify'>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque sit amet dui pulvinar, volutpat turpis vel, elementum odio. Vestibulum ac fringilla enim, ac aliquet ligula. Nunc aliquam sodales blandit. Praesent eu ligula id nisl suscipit iaculis vel sed urna. Donec id nulla luctus, interdum dolor quis, cursus ligula.  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque sit amet dui pulvinar, volutpat turpis vel, elementum odio.</p>
+            <p className='text-sm md:text-1xl  lg:max-w-[580px] md:max-w-[900px] text-justify'>Easily book your train tickets online with Travel World and experience hassle-free travel planning. No more waiting in long queues—get instant confirmations from the comfort of your home. Travel World offers a smooth, secure, and user-friendly booking experience. Enjoy seamless payments 
+                and quick access to train schedules. Make every journey stress-free by choosing Travel World for your travel needs.</p>
         </div>        
     </div> 
     )

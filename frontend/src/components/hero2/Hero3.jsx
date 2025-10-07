@@ -9,20 +9,18 @@ const Hero3 = () => {
             <div className="w-full px-4 lg:w-1/2 xl:w-5/12">
               <div className="mt-10 lg:mt-0">
                 <span className="text-[#41A4FF] mb-2 block text-lg font-semibold">
-                  Trvel with us
+                  Travel with us
                 </span>
                 <h2 className="text-dark mb-8 text-3xl font-bold sm:text-4xl">
                   TAKE ONLY MEMORIES, LEAVE ONLY FOOTPRINTS
                 </h2>
                 <p className="text-body-color mb-8 text-base">
-                  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Esse
-                  nulla enim aperiam culpa cupiditate quas animi ducimus
-                  blanditiis! Dolorum, perspiciatis.
+                Travel with us and turn your journeys into stories worth telling. 
+                Whether you're seeking adventure, relaxation, or cultural discovery, we craft experiences that go beyond the ordinary.
                 </p>
                 <p className="text-body-color mb-12 text-base">
-                  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Esse
-                  nulla enim aperiam culpa cupiditate quas animi ducimus
-                  blanditiis! Dolorum, perspiciatis.
+                Let us handle the details while you immerse yourself in unforgettable moments — because 
+                your perfect trip begins the moment you choose to travel with us.
                 </p>
               </div>
             </div>

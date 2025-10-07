@@ -46,8 +46,8 @@ const Services = () => {
                   What We Offer
                 </h2>
                 <p class="text-body-color text-base">
-                  Lorem ipsum dolor sit, amet consectetur adipisicing elit.
-                  Quaerat reprehenderit autem ea ab repellat eum, quasi modi,
+                We offer customized travel experiences tailored to your needs and interests.
+                From seamless planning to unforgettable adventures, we take care of every detail for you.
                 </p>
               </div>
             </div>

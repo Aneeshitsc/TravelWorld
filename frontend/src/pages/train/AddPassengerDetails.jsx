@@ -59,7 +59,7 @@ export default function AddPassengerDetails() {
           }).then((result) => {
             if (result.isConfirmed) {
               axios
-                .post("/seatBookings/add", {userId,trainId,trainName,price,noOfTickets,firstName,LastName,nationality,IdCardNumber,phoneNumber,email,isApproved,priceStatus})
+                .post("http:localhost:4000/api/seatBookings/add", {userId,trainId,trainName,price,noOfTickets,firstName,LastName,nationality,IdCardNumber,phoneNumber,email,isApproved,priceStatus})
                 .then(() => {
                   Swal.fire("your ticket in under review", "", "success");
                   navigate("/train/MyTickets")

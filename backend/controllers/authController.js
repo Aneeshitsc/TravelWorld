@@ -3,6 +3,10 @@ const bcrypt = require("bcryptjs");
 const jwt = require("jsonwebtoken");
 const { createError } = require("../middleware/error");
 const nodemailer = require("nodemailer");
+// const cloudinary = require("..//utils/cloudinary.js");  // Add this import
+const multer = require("multer");
+const cloudinary = require("cloudinary").v2;
+const streamifier = require("streamifier");
 
 const generateToken = (payload) => {
   const token = jwt.sign(payload, "secretKey", { expiresIn: "1h" });
@@ -17,18 +21,114 @@ const verifyToken = (token) => {
     throw new Error("Invalid token");
   }
 };
+// const registerUser = async (req, res, next) => {
+//   try {
+//     const { name, email, country, mobile, password, type } = req.body;
 
-// @desc    Register new user
-// @route   POST /api/register
-// @access  Public
+//     // Check if image file exists in the request
+//     let imgUrl = '';
+//     if (req.file) {
+//       // Upload the image buffer to Cloudinary
+//       const uploadedImage = await cloudinary.uploader.upload_stream(
+//         {
+//           folder: "user_images",
+//         },
+//         async (error, result) => {
+//           if (error) return next(error);
+//           imgUrl = result.secure_url;
+
+//           // Hash the password
+//           const salt = await bcrypt.genSalt(10);
+//           const hash = await bcrypt.hash(password, salt);
+
+//           // Create and save the user
+//           const newUser = new User({
+//             name,
+//             email,
+//             country,
+//             mobile,
+//             password: hash,
+//             type,
+//             img: imgUrl,
+//           });
+
+//           await newUser.save();
+//           return res.status(200).send("User created successfully");
+//         }
+//       );
+
+//       // Stream the buffer into Cloudinary
+//       if (req.file.buffer) {
+//         const streamifier = require("streamifier");
+//         streamifier.createReadStream(req.file.buffer).pipe(uploadedImage);
+//       } else {
+//         throw new Error("Image buffer is missing");
+//       }
+
+//       return; // Response will be sent from inside upload_stream
+//     }
+
+//     // If no image was uploaded
+//     const salt = await bcrypt.genSalt(10);
+//     const hash = await bcrypt.hash(password, salt);
+//     const newUser = new User({
+//       name,
+//       email,
+//       country,
+//       mobile,
+//       password: hash,
+//       type,
+//       img: imgUrl,
+//     });
+
+//     await newUser.save();
+//     res.status(200).send("User created successfully");
+//   } catch (error) {
+//     next(error);
+//   }
+// };
+
+
+cloudinary.config({
+  cloud_name: process.env.CLOUDINARY_CLOUD_NAME,
+  api_key: process.env.CLOUDINARY_API_KEY,
+  api_secret: process.env.CLOUDINARY_API_SECRET,
+});
+
 const registerUser = async (req, res, next) => {
   try {
-    var salt = await bcrypt.genSaltSync(10);
-    var hash = await bcrypt.hashSync(req.body.password, salt);
+    const { name, email, country, mobile, password, type } = req.body;
+    let imgUrl = "";
+
+    if (req.file) {
+      const streamUpload = (req) => {
+        return new Promise((resolve, reject) => {
+          const stream = cloudinary.uploader.upload_stream(
+            { folder: "user_images" },
+            (error, result) => {
+              if (result) resolve(result);
+              else reject(error);
+            }
+          );
+          streamifier.createReadStream(req.file.buffer).pipe(stream);
+        });
+      };
+
+      const result = await streamUpload(req);
+      imgUrl = result.secure_url;
+    }
+
+    const salt = await bcrypt.genSalt(10);
+    const hash = await bcrypt.hash(password, salt);
 
     const newUser = new User({
-      ...req.body,
+      name,
+      email,
+      country,
+      mobile,
       password: hash,
+      type,
+      img: imgUrl,
     });
 
     await newUser.save();
@@ -37,6 +137,7 @@ const registerUser = async (req, res, next) => {
     next(error);
   }
 };
+
 
 // @desc    Login user
 // @route   POST /api/login

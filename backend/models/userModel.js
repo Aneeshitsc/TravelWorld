@@ -35,12 +35,12 @@ const UserSchema = new mongoose.Schema(
       // enum :["user","admin"],
       // default : "users"
     },
-    pic: {
-      type: String,
-      required: true,
-      default:
-        "https://icon-library.com/images/no-image-icon/no-image-icon-0.jpg",
-    },
+    // pic: {
+    //   type: String,
+    //   required: true,
+    //   default:
+    //     "https://icon-library.com/images/no-image-icon/no-image-icon-0.jpg",
+    // },
   },
   { timestamps: true }
 );

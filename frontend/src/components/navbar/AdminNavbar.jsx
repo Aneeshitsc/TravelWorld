@@ -60,7 +60,7 @@ const AdminNavbar = () => {
     <nav className="flex justify-between lg:px-32 md:px-22 px-12 w-full py-4 bg-gray-50 sticky top-0 z-[999]">
       <div className="flex items-center">
         <Link to="/admin" className="text-2xl font-bold text-[#41A4FF]">
-          TravelyAdmin
+          Travel World
         </Link>
       </div>
 
@@ -160,7 +160,7 @@ const AdminNavbar = () => {
         }
       >
         <Link to="/admin" className="text-2xl font-medium text-blue-500 m-8">
-          Travely
+          Travel World
         </Link>
         <ul className="px-4">
           {user ? (

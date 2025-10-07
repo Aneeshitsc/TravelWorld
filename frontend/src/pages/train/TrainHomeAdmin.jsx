@@ -13,7 +13,7 @@ const TrainHomeAdmmin = () => {
 
     useEffect(()=>{
         const getAllTrain = ()=>{
-            axios.get("/train/").then((res)=>{
+            axios.get("http:localhost:4000/api/train/").then((res)=>{
                 console.log(res.data);
                 setTrains(res.data);
             }).catch((err)=>{
